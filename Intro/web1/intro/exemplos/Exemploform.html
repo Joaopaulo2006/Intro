@@ -5,8 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>form</title>
+    <style>
+         a{
+            color: black;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+        a:visited{
+            color: blue;
+        }
+        table {
+			border-collapse: collapse ;
+			width: 100px;
+		}
+
+		th, td {
+			text-align: left;
+			padding: 8px;
+			border-bottom: 1px solid #ddd;
+		}
+
+		th {
+			background-color: #4CAF50;
+			color: white;
+		}
+    </style>
+    
 </head>
 <body>
+    <h2>Questão 1</h2>
     <h2>Formulário</h2>
     <form>
         <fieldset>
@@ -28,20 +56,26 @@
         <input type="text" id="city" name="city"><br>
 
         <label for="cep">CEP:</label><br>
-        <input type="" id="cep" name="cep"><br>
-        <a href="https://buscacepinter.correios.com.br/app/endereco/index.php">Não sei meu CEP</a>
-
+        <input type="tel" id="cep" name="cep">  
+        
         <label for="estados">Estado:</label>
         <select id="estados" name="estados">
             <option value="ce">Ceará</option>
-        </select>
+            <option value="rn">Rio Grande do Norte</option>
+            <option value="mg">Minas Gerais</option>
+            <option value="es">Espirito Santo</option>
+        </select><br>
+        <a target="_blank" href="https://buscacepinter.correios.com.br/app/endereco/index.php">Não sei meu CEP</a><br>
+
+       
     </fieldset>
 
     <fieldset>
         <legend>Dados profissionais</legend>
         <p>Natureza do cargo<br></p>
-        <input type="radio" id="ger" name="cargo" value="Gerência">
-        <label for="ger">Gerência</label><br>
+        
+        <input type="radio" id="ger" name="cargo" value="Gerencia">
+        <label for="ger">Gerencia</label><br>
 
         <input type="radio" id="fin" name="cargo" value="Financeiro">
         <label for="fin">Financeiro</label><br>
@@ -57,7 +91,7 @@
 
 
         <p>Área de interesse<br></p>
-        <input type="checkbox" id="comp" name="comp" value="Computação">
+        <input type="checkbox" id="comp" name="com" value="Computação">
         <label for="comp">Computação</label><br>
 
         <input type="checkbox" id="qui" name="qui" value="Química">
@@ -80,9 +114,45 @@
         <input type="reset" value="Limpar">
 
     </form>
-
-    <a href="../index.html">Ir para a página principal <br></a>
-    <a href="Exemplotable.html">Ir para página 3 <br></a>
+    <br>
+    
+   <h2>Questão 2</h2>
+   
+    <h2>Informações do Usuário</h2>
+    
+    <table>
+        <tr>
+            <th>Informação</th>
+            <th>Valor</th>
+        </tr>
+        <tr>
+            <td>Nome:</td>
+            <td>João Paulo</td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td>joao.paulo09@aluno.ifce.edu.br</td>
+        </tr>
+        <tr>
+            <td>Idade:</td>
+            <td>35 anos</td>
+        </tr>
+        <tr>
+            <td>Sexo:</td>
+            <td>Masculino</td>
+        </tr>
+        <tr>
+            <td>Cidade:</td>
+            <td>São Paulo</td>
+        </tr>
+        <tr>
+            <td>Estado:</td>
+            <td>São Paulo</td>
+        </tr>
+    </table><br>
+   
+    <a href="../index.html">Ir a página principal <br></a>
+    <a href="Exemplotable.html">página 3 <br></a>
     <a href="Exemplovideo.html">Ir para página 4 <br></a>
 
     <h5>Página 2</h5>

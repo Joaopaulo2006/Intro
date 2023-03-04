@@ -5,12 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width>, initial-scale=1.0">
     <title>table</title>
+    <style>
+        th{
+            background-color: green;
+            color: white;
+        }
+        a{
+            color: black;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+        a:visited{
+            color: blue;
+        }
+        table{
+            border-collapse: collapse;
+            width: 25%;
+        }
+        th, td{
+            border-bottom: 1% solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+    </style>
+    
 </head>
 <body>
     <h2>tabela 1</h2>
     <table widht="600px" border="1px">
         <tr>
-            <th>alunos</th>
+            <th >alunos</th>
             <th>nota 1</th>
             <th>nota 2</th>
             <th>mf</th>
@@ -75,34 +101,68 @@
     <h2>tabela 3 (Rowspan)</h2>
     <table widht="600px" border="1px">
         <tr>
-            <th>alunos</th>
-            <th>nota 1</th>
-            <th>nota 2</th>
+            <th>Alunos</th>
+            <th>Nota 1</th>
+            <th>Nota 2</th>
             <th>mf</th>
         </tr>
         <tr>
-            <td rowspan="2">Carlos</td>
-            <td>7.0</td>
-            <td>4.0</td>
-            <td>5.5</td>
+            <td rowspan="2px">Isaac</td>
+            <td>9.5</td>
+            <td>4.9</td>
+            <td>7.2</td>
         </tr>
         <tr>
-            <td>4.0</td>
-            <td>8.0</td>
-            <td>6.0</td>
+            <td>10.0</td>
+            <td>10.0</td>
+            <td>10.0</td>
         </tr>
         <tr>
-            <td rowspan="2">Jonathan</td>
+            <td rowspan="2px">George</td>
+            <td>7.8</td>
+            <td>5.8</td>
+            <td>6.8</td>
+        </tr>
+        <tr>
+            <td>3.6</td>
+            <td>3.7</td>
+            <td>3.7</td>
+        </tr>
+    </table><br>
+
+    <h2>Tabela 4 (Row e Colspan)</h2>
+    
+    <table widht="600px" border="1px">
+        <tr>
+            <th>Alunos</th>
+            <th colspan="2">Notas</th>
+            <th>mf</th>
+        </tr>
+        <tr>
+            <td rowspan="2">George</td>
+            <td>5.0</td>
+            <td>3.0</td>
+            <td>4.0</td>
+        </tr>
+        <tr>
             <td>9.0</td>
-            <td>6.0</td>
-            <td>7.5</td>
+            <td>7.0</td>
+            <td>8.0</td>
         </tr>
         <tr>
-            <td>8.0</td>
-            <td>7.0</td>
-            <td>7.5</td>
+            <td rowspan="2">Orwell</td>
+            <td>1.9</td>
+            <td>8.4</td>
+            <td>5.2</td>
         </tr>
-    </table>
+        <tr>
+            <td>10.0</td>
+            <td>4.6</td>
+            <td>7.3</td>
+        </tr>
+    </table><br>
+    
+    <br>
     <a href="../index.html">Ir a página principal</a><br>
     <a href="/web1/intro/exemplos/Exemploform.html">Página 2</a><br>
     <a href="/web1/intro/exemplos/Exemplovideo.html">Página 4</a><br>
